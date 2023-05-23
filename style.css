@@ -1,0 +1,29 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card, .card-header{
+    border-color:  rgb(109, 109, 217);
+    border-width: 5px;
+    color:  rgb(60, 60, 196);
+}
+
+.row{
+    max-height: 350px;
+    width: 950px;
+}
+
+.card-title{
+    font-size: 28px;
+}
+
+.card_info{
+    margin: 10px;
+}
+
+b{
+    color: rgb(109, 109, 217);
+}
