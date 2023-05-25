@@ -27,15 +27,15 @@ const workerGen = {
         "count": 10,
         "list": {     
             "el_1": "Александр",
-            "el_2": "Алексей",
+            "el_2": "Артём",
             "el_3": "Иван",
-            "el_4": "Артем",
-            "el_5": "Дмитрий",
-            "el_6": "Никита",
+            "el_4": "Олег",
+            "el_5": "Вадим",
+            "el_6": "Валентин",
             "el_7": "Кирилл",
-            "el_8": "Данила",
+            "el_8": "Владимир",
             "el_9": "Егор",
-            "el_10": "Андрей"
+            "el_10": "Максим"
         }
     }`,
     // Женские имена //
@@ -52,22 +52,6 @@ const workerGen = {
             "el_8": "Лана",
             "el_9": "Марина",
             "el_10": "Наталья"
-        }
-    }`,
-    // Мужские\Женские отчества //
-    fatherNames: `{  
-        "count": 10,
-        "list": {
-            "el_1": "Иванов",
-            "el_2": "Алексеев",
-            "el_3": "Петров",
-            "el_4": "Михайлов",
-            "el_5": "Федоров",
-            "el_6": "Николаев",
-            "el_7": "Вячеславов",
-            "el_8": "Данилов",
-            "el_9": "Павлов",
-            "el_10": "Александров"
         }
     }`,
     // Мужские профессии //
@@ -151,7 +135,7 @@ const workerGen = {
 
     generFatherName: function(){
 
-        let randomFatherName = (gender == 'Мужчина') ? `${this.generValue(this.fatherNames)}ич` : `${this.generValue(this.fatherNames)}на`;
+    let randomFatherName = (gender == 'Мужчина') ? `${this.generValue(this.workerNamesMale)}ович` : `${this.generValue(this.workerNamesMale)}овна`;
         
         return randomFatherName;   
     },   
